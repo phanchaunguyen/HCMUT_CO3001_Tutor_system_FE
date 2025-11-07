@@ -16,17 +16,20 @@ body{
 
 .container{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .logo{
     text-decoration: none;
-    color: #4760ec;
+    color: #000000;
     font-size: 20px;
     font-weight: bold;
 }
 
+.blue-logo{
+    color: rgb(41, 41, 165);
+}
 
 /* NAV starts here */
 header{
@@ -36,12 +39,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    border-bottom: 2px solid #6c8bcf;
 }
 
 .log-in-button{
-    background-color: rgb(17, 17, 119);
+    background-color: rgb(41, 41, 165);
     color: white;
 
     padding: 20px;
@@ -90,12 +91,14 @@ main {
     width: 90%;
     max-width: 1080px;
     margin: 0 auto;
+
+    background-color: #E0E6FF;
 }
 
 .steps-container{
     display: flex;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 60px 0;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -113,6 +116,18 @@ main {
 
 .steps-content:last-child{
     margin-right: 0;
+}
+
+.manifest-tag{
+    padding: 10px;
+    background-color: plum;
+    color: #000000;
+    border-radius: 15px;
+}
+
+
+.introduction-image{
+    
 }
 
 
@@ -168,11 +183,46 @@ footer{
     background-color: #edeef1;
     color: black;
 
-    display:block
-    padding: 40px 5%;
+    display:block;
+    padding: 15px 5%;
 
     border-top: 2px solid black;
+
+    align-items: flex-start;
 }
+
+.footer-student-information{
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+
+.footer-student-information ul{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.socials{
+    display: flex;
+    justify-content:flex-end;
+
+    gap: 10px;
+}
+
+.socials a img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
