@@ -10,9 +10,27 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     line-height: 1.5;
+
+    max-width: 1080px;
 }
 
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    text-decoration: none;
+    color: #4760ec;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* NAV starts here */
 header{
+    background-color:rgb(236, 238, 241);
     padding: 15px 5%;
 
     display: flex;
@@ -20,6 +38,17 @@ header{
     align-items: center;
 
     border-bottom: 2px solid #6c8bcf;
+}
+
+.log-in-button{
+    background-color: rgb(17, 17, 119);
+    color: white;
+
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 nav ul{
@@ -33,12 +62,118 @@ nav ul{
 nav ul li{
     padding-left: 15px;
     padding-right: 15px;
+    color: white;
+    font-weight: bold;
 }
 
 nav ul li a{
     text-decoration: none;
 
-    color: #333;
-    font-weight: 500;
+    color: #000000;
+    font-weight: bold;
     font-size: 12;
 }
+
+/* BODY starts here */
+
+main {
+    display: flex;
+    flex-direction: column; 
+}
+
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.steps-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.steps-content{
+    flex: 1;
+    margin-right: 20px;
+
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.steps-content:last-child{
+    margin-right: 0;
+}
+
+
+.tutor-list{
+    list-style-type: none;
+    padding: 0%;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.tutor-card{
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    margin: 10px;
+    
+    text-align: center;
+    box-shadow: 0 15px 15px rgba(10, 10, 10, 0.05);
+}
+
+.student-review-container {
+    display: flex;
+    justify-content: space-around; 
+    
+    margin-top: 50px; 
+    padding-bottom: 50px;
+    
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-box {
+    flex: 1; 
+    margin: 0 15px; 
+    
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* FOOTER starts here */
+
+footer{
+    background-color: #edeef1;
+    color: black;
+
+    display:block
+    padding: 40px 5%;
+
+    border-top: 2px solid black;
+}
+
+
+
+
